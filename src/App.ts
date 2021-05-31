@@ -33,20 +33,31 @@
 // console.log(data);
 
 // type never => function with never cannot be executed to the end
-const data = (): void => {
-  console.log("haloo");
-};
-let dataAngka: number = 123;
-dataAngka = 123;
-//  intiny ialah : untuk fn itu tandany mengembalikan atau return sedangkan untuk variable : ialah type data
-let dataAngkaStr: string = "deddy";
-let angkaDasar: number = 1123;
-let tidak: unknown;
-const angka: number = angkaDasar as number;
+// const data = (): void => {
+//   console.log("haloo");
+// };
+// let dataAngka: number = 123;
+// dataAngka = 123;
+// //  intiny ialah : untuk fn itu tandany mengembalikan atau return sedangkan untuk variable : ialah type data
+// let dataAngkaStr: string = "deddy";
+// let angkaDasar: number = 1123;
+// let tidak: unknown;
+// const angka: number = angkaDasar as number;
 
-// "as" is operation makes type assertion
-// as keyword is also known as type assertion
-const biodata = {
-  nama: "string",
-  kelas: 123,
+// // "as" is operation makes type assertion
+// // as keyword is also known as type assertion
+// const biodata = {
+//   nama: "string",
+//   kelas: 123,
+// };
+// const funct = <T>(obj: T): T => {
+//   const angkaRandom = Math.floor(Math.random() * 100);
+//   return { ...obj, angkaRandom };
+// };
+// const data = funct({ name: "deddy", kelas: "SI" });
+// console.log(data.name);
+const data = <T>(param: T): T => {
+  return param.length;
 };
+console.log(data(123123));
+// Property 'name' does not exist on type 'object

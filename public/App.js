@@ -1,4 +1,5 @@
 "use strict";
+// GENERIC
 // interface SumberData<T> {
 //   name: string;
 //   kelas: string;
@@ -30,19 +31,30 @@
 // // let data: number = dataBind as unknown as number;
 // console.log(data);
 // type never => function with never cannot be executed to the end
-const data = () => {
-    console.log("haloo");
+// const data = (): void => {
+//   console.log("haloo");
+// };
+// let dataAngka: number = 123;
+// dataAngka = 123;
+// //  intiny ialah : untuk fn itu tandany mengembalikan atau return sedangkan untuk variable : ialah type data
+// let dataAngkaStr: string = "deddy";
+// let angkaDasar: number = 1123;
+// let tidak: unknown;
+// const angka: number = angkaDasar as number;
+// // "as" is operation makes type assertion
+// // as keyword is also known as type assertion
+// const biodata = {
+//   nama: "string",
+//   kelas: 123,
+// };
+// const funct = <T>(obj: T): T => {
+//   const angkaRandom = Math.floor(Math.random() * 100);
+//   return { ...obj, angkaRandom };
+// };
+// const data = funct({ name: "deddy", kelas: "SI" });
+// console.log(data.name);
+const data = (param) => {
+    return param.length;
 };
-let dataAngka = 123;
-dataAngka = 123;
-//  intiny ialah : untuk fn itu tandany mengembalikan atau return sedangkan untuk variable : ialah type data
-let dataAngkaStr = "deddy";
-let angkaDasar = 1123;
-let tidak;
-const angka = angkaDasar;
-// "as" is operation makes type assertion
-// as keyword is also known as type assertion
-const obj = {
-    name: "dedy",
-    kelas: "SI",
-};
+console.log(data(123123));
+// Property 'name' does not exist on type 'object

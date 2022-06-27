@@ -11,7 +11,6 @@
 //   usia: 20,
 //   matkul: ["Web", 12, true],
 // };
-
 // const dataDua: SumberData<{ namaPel: string; ruangan: number }> = {
 //   name: "deddy",
 //   kelas: "TI",
@@ -25,13 +24,11 @@
 //   matkul: "si",
 // };
 // console.log(data, dataDua, dataTiga);
-
 // enum
 // let dataBind: string = "ini adalah string";
 // const data = dataBind as unknown;
 // // let data: number = dataBind as unknown as number;
 // console.log(data);
-
 // type never => function with never cannot be executed to the end
 // const data = (): void => {
 //   console.log("haloo");
@@ -43,7 +40,6 @@
 // let angkaDasar: number = 1123;
 // let tidak: unknown;
 // const angka: number = angkaDasar as number;
-
 // // "as" is operation makes type assertion
 // // as keyword is also known as type assertion
 // const biodata = {
@@ -61,22 +57,13 @@
 // };
 // console.log(data(123123));
 // Property 'name' does not exist on type 'object
-let str = "Deddy Prianto Sihombing";
-let angka = 123;
-let isUser = true;
-
-type StiringArray = Array<string>;
-interface Data {
-  id: any;
-  nama?: any;
-}
-const data = (item: Data) => {
-  return item;
+var str = "Deddy Prianto Sihombing";
+var angka = 123;
+var isUser = true;
+var data = function (item) {
+    return item;
 };
 data({
-  id: "asd",
+    id: "asd",
+    nama: false
 });
-
-let datas: StiringArray = [];
-
-datas = ["asd"];
